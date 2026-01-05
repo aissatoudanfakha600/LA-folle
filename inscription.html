@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscription - Kajoura Djinguily">
+    <title>Inscription - Kajoura Djinguily</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Kajoura Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="produits.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="apropos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-icons d-none d-lg-flex">
+                <img src="assets/icons/search.svg" alt="Search" class="nav-icon">
+                <div class="cart-badge">
+                    <img src="assets/icons/shopping-cart.svg" alt="Cart" class="nav-icon">
+                    <span class="badge bg-primary">2</span>
+                </div>
+                <a href="connexion.html" class="btn btn-outline-primary btn-sm ms-2">Se connecter</a>
+                <a href="inscription.html" class="btn btn-accent btn-sm ms-2">S'inscrire</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="registration-container">
+                        <h1 class="registration-title text-center">Inscrivez-vous</h1>
+                        
+                        <form class="registration-form" id="registrationForm">
+                            <div class="mb-4">
+                                <label for="prenom" class="form-label registration-label">Prénom</label>
+                                <input type="text" class="form-control registration-input" id="prenom" name="prenom" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="nom" class="form-label registration-label">Nom</label>
+                                <input type="text" class="form-control registration-input" id="nom" name="nom" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="form-label registration-label">E-mail</label>
+                                <input type="email" class="form-control registration-input" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="password" class="form-label registration-label">Mot-de-passe</label>
+                                <input type="password" class="form-control registration-input" id="password" name="password" required minlength="6">
+                            </div>
+                            
+                            <div class="mb-5">
+                                <label for="confirmPassword" class="form-label registration-label">Confirmer mot-de-passe</label>
+                                <input type="password" class="form-control registration-input" id="confirmPassword" name="confirmPassword" required minlength="6">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-registration w-100">S'inscrire</button>
+                            
+                            <p class="registration-login-link text-center mt-4">
+                                Déjà inscrit? <a href="connexion.html" class="registration-link">Se connecter</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/logo-footer.png" alt="Kajoura Logo" class="footer-logo">
+                    <p class="footer-tagline">Le meilleur jus de pomme de cajou directement de nos verges à vos table.</p>
+                    <div class="footer-social">
+                        <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/tiktok.png" alt="TikTok" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" class="social-icon"></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="footer-section-title">Service Clients</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#livraison">Livraison</a></li>
+                        <li><a href="#retours">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="footer-section-title">Contact</h3>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/phone.png" alt="Phone" class="footer-contact-icon">
+                        <span class="footer-contact-text">+ 221 77 388 74 06</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/email.png" alt="Email" class="footer-contact-icon">
+                        <span class="footer-contact-text">Kajouradjinguily@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/location.png" alt="Location" class="footer-contact-icon">
+                        <span class="footer-contact-text">Diamaguene Nord,Sokone</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">© 2025 Kajoura Djinguily. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Registration Form Validation -->
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Les mots de passe ne correspondent pas. Veuillez réessayer.');
+                return;
+            }
+            
+            // Here you would typically send the data to a server
+            alert('Inscription réussie ! Bienvenue chez Kajoura Djinguily.');
+            window.location.href = 'connexion.html';
+        });
+    </script>
+</body>
+</html>

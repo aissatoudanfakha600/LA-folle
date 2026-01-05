@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Réinitialisation du mot de passe - Kajoura Djinguily">
+    <title>Mot de passe oublié - Kajoura Djinguily</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Kajoura Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="produits.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="apropos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-icons d-none d-lg-flex">
+                <img src="assets/icons/search.svg" alt="Search" class="nav-icon">
+                <div class="cart-badge" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" style="cursor: pointer;">
+                    <img src="assets/icons/shopping-cart.svg" alt="Cart" class="nav-icon">
+                    <span class="badge">0</span>
+                </div>
+                <a href="connexion.html" class="btn btn-connexion">Connexion</a>
+                <a href="inscription.html" class="btn btn-inscription ms-2">S'inscrire</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Forgot Password Section -->
+    <section class="forgot-password-section">
+        <div class="container">
+            <div class="forgot-password-container">
+                <h1 class="forgot-password-title">Mot de passe oublié?</h1>
+                
+                <p class="forgot-password-description">
+                    Entrez l'adresse e-mail que vous avez utilisée lors de la création du compte, et nous vous enverrons un code pour réinitialiser votre mot de passe
+                </p>
+                
+                <form class="forgot-password-form" id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="emailInput" class="form-label-custom">E-mail</label>
+                        <input 
+                            type="email" 
+                            class="form-control form-input-custom" 
+                            id="emailInput" 
+                            placeholder="E-mail"
+                            required
+                        >
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit-forgot-password">
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/logo-footer.png" alt="Kajoura Logo" class="footer-logo">
+                    <p class="footer-tagline">Le meilleur jus de pomme de cajou directement de nos verges à vos table.</p>
+                    <div class="footer-social">
+                        <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/tiktok.png" alt="TikTok" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" class="social-icon"></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="footer-section-title">Service Clients</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#livraison">Livraison</a></li>
+                        <li><a href="index.html#testimonials">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="footer-section-title">Contact</h3>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/phone.png" alt="Phone" class="footer-contact-icon">
+                        <span class="footer-contact-text">+ 221 77 388 74 06</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/email.png" alt="Email" class="footer-contact-icon">
+                        <span class="footer-contact-text">Kajouradjinguily@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/location.png" alt="Location" class="footer-contact-icon">
+                        <span class="footer-contact-text">Diamaguene Nord,Sokone</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">© 2025 Kajoura Djinguily. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Form submission handler
+        document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('emailInput').value;
+            
+            // Simulate sending reset email
+            alert('Un code de réinitialisation a été envoyé à ' + email);
+            
+            // Optionally redirect to login page after a delay
+            setTimeout(() => {
+                window.location.href = 'connexion.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

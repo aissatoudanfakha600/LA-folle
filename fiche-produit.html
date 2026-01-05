@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jus de pomme de cajou 100% naturel - Kajoura Djinguily">
+    <title>Jus de Cajou 100% Naturel - Kajoura Djinguily</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Kajoura Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-accent" href="produits.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="apropos.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-icons d-none d-lg-flex">
+                <img src="assets/icons/search.svg" alt="Search" class="nav-icon">
+                <div class="cart-badge">
+                    <img src="assets/icons/shopping-cart.svg" alt="Cart" class="nav-icon">
+                    <span class="badge">0</span>
+                </div>
+                <a href="connexion.html" class="btn btn-connexion">Connexion</a>
+                <a href="inscription.html" class="btn btn-inscription ms-2">S'inscrire</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="row">
+                <!-- Product Image -->
+                <div class="col-lg-5">
+                    <div class="product-image-container">
+                        <img src="assets/images/product-detail-bottles.png" alt="Jus de Cajou" class="product-detail-image">
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="col-lg-7">
+                    <div class="product-info">
+                        <h1 class="product-detail-title">Jus de pomme de cajou 100% naturel</h1>
+                        <p class="product-brand">Kajoura Djinguily</p>
+                        
+                        <div class="product-rating-section">
+                            <img src="assets/icons/star-rating.svg" alt="Rating" class="product-rating-stars">
+                            <span class="product-rating-text">(3Avis)</span>
+                            <a href="#avis" class="product-rating-link">Vois tous les avis</a>
+                        </div>
+                        
+                        <h3 class="product-size-title">Choisir la taille</h3>
+                        
+                        <div class="product-size-options">
+                            <div class="size-option" data-size="petite">
+                                <div class="size-option-title">Petite Taille</div>
+                                <div class="size-option-volume">250–330 ml</div>
+                                <div class="size-option-price">300 à 500  FCFA.</div>
+                            </div>
+                            
+                            <div class="size-option" data-size="litre">
+                                <div class="size-option-title">1 Litre</div>
+                                <div class="size-option-price">Prix : 1 500 FCFA</div>
+                            </div>
+                            
+                            <div class="size-option" data-size="brique">
+                                <div class="size-option-title">Brique</div>
+                                <div class="size-option-price">Prix : 2 000 FCFA</div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-quantity-selector">
+                            <button class="quantity-btn" id="decrease">-</button>
+                            <input type="text" class="quantity-input" value="1" id="quantity" readonly>
+                            <button class="quantity-btn" id="increase">+</button>
+                        </div>
+                        
+                        <button class="btn btn-add-to-cart w-100 mb-3">Ajouter au panier</button>
+                        <button class="btn btn-buy-now w-100">Acheter maintenant</button>
+                        
+                        <div class="product-features">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <img src="assets/icons/natural-plant.png" alt="100% Naturel" class="feature-icon">
+                                        <span class="feature-text">100% Naturel</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <img src="assets/icons/security-badge.png" alt="Sécurisé" class="feature-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <img src="assets/icons/delivery-truck.svg" alt="Livraison" class="feature-icon">
+                                        <span class="feature-text">Livraison rapide</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <img src="assets/icons/quality-badge.png" alt="Qualité" class="feature-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Tabs -->
+            <div class="product-tabs-section mt-5">
+                <ul class="nav nav-tabs product-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">
+                            Description
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bienfaits-tab" data-bs-toggle="tab" data-bs-target="#bienfaits" type="button" role="tab">
+                            Bienfaits
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="avis-tab" data-bs-toggle="tab" data-bs-target="#avis" type="button" role="tab">
+                            Avis Clients (3)
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content product-tab-content">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <p class="product-description-text">
+                            Découvrez notre jus de pomme de cajou 100% naturel Kajoura Djinguily, une boisson authentique et rafraîchissante directement issue des vergers tropicaux. Élaboré selon des méthodes traditionnelles respectueuses de l'environnement, ce jus conserve toutes les propriétés nutritionnelles exceptionnelles de la pomme de cajou.
+                        </p>
+                        <p class="product-description-text">
+                            La pomme de cajou, fruit charnu et juteux de l'anacardier, offre une saveur unique alliant douceur et acidité naturelle. Notre processus de fabrication artisanal préserve l'intégrité du fruit pour vous offrir une expérience gustative authentique et naturelle.
+                        </p>
+                        <p class="product-description-text">
+                            Sans additifs, sans conservateurs artificiels et sans sucres ajoutés, ce jus est l'expression pure du fruit dans toute sa splendeur naturelle.
+                        </p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="bienfaits" role="tabpanel">
+                        <p class="product-description-text">
+                            Le jus de pomme de cajou est riche en vitamines C, en antioxydants et en minéraux essentiels. Il contribue au renforcement du système immunitaire et à la santé cardiovasculaire.
+                        </p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="avis" role="tabpanel">
+                        <p class="product-description-text">
+                            Nos clients adorent notre jus de cajou ! Consultez leurs avis pour en savoir plus sur leur expérience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/logo-footer.png" alt="Kajoura Logo" class="footer-logo">
+                    <p class="footer-tagline">Le meilleur jus de pomme de cajou directement de nos verges à vos table.</p>
+                    <div class="footer-social">
+                        <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/tiktok.png" alt="TikTok" class="social-icon"></a>
+                        <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" class="social-icon"></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="footer-section-title">Service Clients</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#livraison">Livraison</a></li>
+                        <li><a href="#retours">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="footer-section-title">Contact</h3>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/phone.png" alt="Phone" class="footer-contact-icon">
+                        <span class="footer-contact-text">+ 221 77 388 74 06</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/email.png" alt="Email" class="footer-contact-icon">
+                        <span class="footer-contact-text">Kajouradjinguily@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="assets/icons/location.png" alt="Location" class="footer-contact-icon">
+                        <span class="footer-contact-text">Diamaguene Nord,Sokone</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">© 2025 Kajoura Djinguily. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Product Page Script -->
+    <script>
+        // Size selection
+        document.querySelectorAll('.size-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Quantity controls
+        let quantity = 1;
+        const quantityInput = document.getElementById('quantity');
+        
+        document.getElementById('increase').addEventListener('click', function() {
+            quantity++;
+            quantityInput.value = quantity;
+        });
+        
+        document.getElementById('decrease').addEventListener('click', function() {
+            if (quantity > 1) {
+                quantity--;
+                quantityInput.value = quantity;
+            }
+        });
+        
+        // Add to cart
+        document.querySelector('.btn-add-to-cart').addEventListener('click', function() {
+            const selectedSize = document.querySelector('.size-option.active');
+            if (!selectedSize) {
+                alert('Veuillez choisir une taille');
+                return;
+            }
+            alert('Produit ajouté au panier !');
+        });
+        
+        // Buy now
+        document.querySelector('.btn-buy-now').addEventListener('click', function() {
+            const selectedSize = document.querySelector('.size-option.active');
+            if (!selectedSize) {
+                alert('Veuillez choisir une taille');
+                return;
+            }
+            alert('Redirection vers la page de paiement...');
+        });
+    </script>
+</body>
+</html>
